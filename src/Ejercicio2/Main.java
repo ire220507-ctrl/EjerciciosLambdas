@@ -9,6 +9,5 @@ public class Main {
 
 		System.out.println("La suma es: " + resultado);
 	}
-
 }
 
