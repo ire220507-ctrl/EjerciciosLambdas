@@ -1,8 +1,15 @@
 package Ejercicio4;
 
 public class Main {
-	public static void main(String[] args) {
-		Operacion suma = (x, y) -> x + y; // creo una lambda que implementa Operacion y devuelve "x+y" 
+	//METODO OPERAR que devuelve un int 
+	static int operar(int a, int b, Operacion operacion) {
+        return operacion.calcular(a, b); //ejecuta la operacion llamando al metodo de la interfaz
+    }
+
+    public static void main(String[] args) {
+       
+    	
+    	Operacion suma = (x, y) -> x + y; // creo una lambda que implementa Operacion y devuelve "x+y" 
 
         Operacion multiplicacion = (x, y) -> x * y;
 
@@ -11,5 +18,6 @@ public class Main {
 
         System.out.println("Resultado de la suma: " + resultadoSuma);
         System.out.println("Resultado de la multiplicación: " + resultadoMultiplicacion);
-	}
+    }
+
 }
