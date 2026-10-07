@@ -11,11 +11,11 @@ public class Main {
 	
 	Operacion resta = (a, b) -> a - b;
 	int resultado2 = resta.calcular(10,4);
-	System.out.println("La suma es: " + resultado2);
+	System.out.println("La resta es: " + resultado2);
 	
 	Operacion multiplicacion = (a, b) -> a * b;
 	int resultado3 = multiplicacion.calcular(10,4);
-	System.out.println("La suma es: " + resultado3);
+	System.out.println("La multiplicacion es: " + resultado3);
 	
 	}
 }
